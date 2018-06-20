@@ -1,0 +1,23 @@
+page-home {
+    
+}
+
+.home-page {
+    text-align: center;
+    color: color($colors, light);
+    background-color: color($colors, lightly);
+}
+.weather__location {
+    font-size: 4rem;
+}
+.weather__description {
+    margin-top: 0;
+}
+.info-list__item {
+    text-align: center;
+    color: color($colors, light);
+    background-color: color($colors, secondary);
+}
+.main-info {
+    margin-bottom: 20px;
+}

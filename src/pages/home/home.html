@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home-page">
+  <ion-grid *ngIf = "weather">
+    <ion-row class="main-info">
+      <ion-col width-50 offset-25>
+          <h1 class="weather__location">{{city}}</h1>
+          <div class="icon">
+            <img src="{{icon}}" alt="">
+          </div>
+          <h3 class="weather__description" text-wrap>
+              {{description}}
+          </h3>
+          <h3 class="weather__temp">
+              {{temp}}
+          </h3> 
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+          <ion-list class="info-list">
+              <ion-item class="info-list__item">
+                <strong>Humidity:</strong> {{weather.main.humidity}}%
+              </ion-item>
+              <ion-item class="info-list__item">
+                <strong>Wind Speed:</strong> {{weather.wind.speed}} m/s
+              </ion-item>
+              <ion-item class="info-list__item">
+                <strong>Temperature Max:</strong> {{tempMax}} 
+              </ion-item>
+              <ion-item class="info-list__item">
+                <strong>Temperature Min:</strong> {{tempMin}}
+              </ion-item>
+            </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

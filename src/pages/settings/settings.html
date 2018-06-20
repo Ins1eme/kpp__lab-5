@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="settings-page" padding>
+  <ion-row>
+    <ion-col width-70 offset-15>
+        <ion-item class="label-city">
+          <ion-label>Change City</ion-label>
+          <ion-input type="text" name="city" [(ngModel)]="city" ></ion-input>
+        </ion-item>
+        <button ion-button type="submit" (click) = "onSubmit()" class="setting-btn" block>OK</button>
+    </ion-col>
+  </ion-row>
+    
+</ion-content>
